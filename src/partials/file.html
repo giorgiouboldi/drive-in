@@ -1,10 +1,30 @@
 <!-- div class="filename">{{file.title}}</div -->
+          <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Emaps</a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
           <a id="file-{{file.id}}"></a>
           <div ng-switch="file.type">
             <div ng-switch-when="image">
+              
               <p></p>
-              <img ng-src="{{file.src}}">
-              <div class="caption">{{file.title}}</div>
+            <div class="container-fluid">
+              <img ng-src="{{file.src}}" class"full-width-image">
+            </div>
+               <!--<div class="caption">{{file.title}}</div>-->
             </div>
             <div ng-switch-when="PDF">  
               <!-- img ng-src="{{file.src}}" this is the file preview...-->
