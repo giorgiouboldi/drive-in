@@ -145,8 +145,10 @@ angular.module('tipot.controllers', [])
                 type = "css";
               else if(title.text.match(/\.js$/))
                 type = "js";
-              else if(title.text.match(/sidebar$/))
-                type = "DocumentSidebar";
+              else if(title.text.match(/metadata/))
+                type = "Metadata";
+              else if(title.text.match(/finding/))
+                type = "Finding";
             }
             //else if(title == "bibliography")
             //  type = "bibtex";

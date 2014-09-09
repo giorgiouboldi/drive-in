@@ -15,12 +15,16 @@
               <h2 class="filename">{{file.title}}</h2>
               <div lazy-file file="file"></div>
             </div>
-            
-            <div ng-switch-when="DocumentSidebar">
-              <h2 class="filename">{{file.title}} SIDE</h2>
+
+            <div ng-switch-when="Metadata">
+              <h2 class="filename">{{file.title}} metadata</h2>
               <div lazy-file file="file"></div>
             </div>
 
+            <div ng-switch-when="Finding">
+              <h2 class="filename">{{file.title}} finding</h2>
+              <div lazy-file file="file"></div>
+            </div>
             
             <div ng-switch-when="html">
               <div lazy-file file="file"></div>

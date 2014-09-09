@@ -19,7 +19,7 @@ angular.module('tipot.directives', [])
           
           element.text('.');//loading
           
-          if(scope.file.type == "Document" || scope.file.type == "DocumentSidebar"){
+          if(["Document", "Metadata", "Finding"].indexOf(scope.file.type) != -1){
             GoogleApiFactory.getHtml(scope.file.id).then(function(res){
               element.text('...');
               var body = res.data.match(/<body[^>]*>((.|[\n\r])*)<\/body>/i)[1];
