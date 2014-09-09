@@ -138,12 +138,16 @@ angular.module('tipot.controllers', [])
                         return d.img.src.split(/=s\d+$/).shift();
                       });
             // type assignation based on file naming 
-            if(title.text && title.text.match(/\.html$/))
-              type = "html";
-            else if(title.text && title.text.match(/\.css$/))
-              type = "css";
-            else if(title.text && title.text.match(/\.js$/))
-              type = "js";
+            if(title.text) {
+              if(title.text.match(/\.html$/))
+                type = "html";
+              else if(title.text.match(/\.css$/))
+                type = "css";
+              else if(title.text.match(/\.js$/))
+                type = "js";
+              else if(title.text.match(/sidebar$/))
+                type = "DocumentSidebar";
+            }
             //else if(title == "bibliography")
             //  type = "bibtex";
 
