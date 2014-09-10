@@ -138,6 +138,7 @@ angular.module('tipot.controllers', [])
                         return d.img.src.split(/=s\d+$/).shift();
                       });
             // type assignation based on file naming 
+            console.log('structure ',title.text)
             if(title.text) {
               if(title.text.match(/\.html$/))
                 type = "html";
@@ -145,15 +146,26 @@ angular.module('tipot.controllers', [])
                 type = "css";
               else if(title.text.match(/\.js$/))
                 type = "js";
-              else if(title.text.match(/metadata/))
+              else if(title.text.indexOf("description") != -1)
+                type = "Document"
+               else if(title.text.indexOf("placeholder") != -1)
+                type = "PNG Image"
+              else if(title.text.indexOf("metadata") != -1)
                 type = "Metadata";
-              else if(title.text.match(/finding/))
+              else if(title.text.indexOf("finding") != -1)
                 type = "Finding";
+              else {
+
+                type = "disabled";
+              }
+                
             }
+            console.log('   ', type)
             //else if(title == "bibliography")
             //  type = "bibtex";
-
             switch(type) {
+              case "disabled":
+              break;
               case "bibtex":
                 bibliography.push({
                   title: title.text,
