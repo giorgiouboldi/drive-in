@@ -24,6 +24,10 @@ angular.module('tipot.directives', [])
               element.text('...');
               var body = res.data.match(/<body[^>]*>((.|[\n\r])*)<\/body>/i)[1];
               
+              // intercept local style modification
+              body = body.trim()
+              body = body.replace(/style="[^"]*"/g, '');
+
               // intercept same google doc internal bookmark 
               body = body.trim().replace(/href="#([^"]{1,})"/g, function(m, bookmark) {
                 return 'href="'+ $rootScope.path +'?bookmark=' + bookmark + '"';
