@@ -4,8 +4,37 @@
 	border-color: #f0ecec;
 }
 
+p {
+	font-family: 'Crimson Text', serif;
+	font-size: 1.5em;
+
+}
+
+
+
 /*Map Template*/
+
 img{
 width: 100%;
 }
 
+.sidebar-map{
+
+}
+
+.main-map{
+	border-right: 1px solid #ccc;
+}
+
+h1{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1em;
+	letter-spacing: 1px;
+
+}
+
+h2 {
+	display: none;
+}
