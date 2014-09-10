@@ -146,7 +146,7 @@ angular.module('tipot.controllers', [])
                 type = "css";
               else if(title.text.match(/\.js$/))
                 type = "js";
-              else if(title.text.indexOf("description") != -1 || title.raw.indexOf("narrative") != -1)
+              else if(title.text.indexOf("description") != -1 || title.raw.indexOf("Narrative") != -1)
                 type = "Document"
                else if(title.text.indexOf("placeholder") != -1)
                 type = "PNG Image"
