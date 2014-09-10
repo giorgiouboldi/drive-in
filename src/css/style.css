@@ -4,24 +4,56 @@
 	border-color: #f0ecec;
 }
 
+.navbar-header{
+	margin-right: 0;
+	margin-left: 100px;
+}
+
 p {
 	font-family: 'Crimson Text', serif;
-	font-size: 1.5em;
+	font-size: 1.2em;
 
 }
 
 /*Map Template*/
 .full-width-image{
-	max-height:80%;
-	width: 100%;
+	 position: relative;
+	 border-bottom: 1px solid #f0ecec;
 }
 
+.full-width-image img{
+	display: block;
+    width: auto;
+    max-height: 80%; /* corresponds to max height of 450px */
+    margin: 0 auto;
+}
+
+.main-map{
+	padding-left: 100px;
+}
+
+.content-main-map{
+	border-right: 1px solid #f0ecec;
+	padding-right: 70px;
+	padding-top: 30px;
+}
 
 .sidebar-map{
-padding-top: 30px;
+}
+
+.content-sidebar-map{
+	padding-left: 10px;
+	padding-right: 100px;
+	padding-top: 30px;
 }
 
 .sidebar-map p{
+	margin: 0;
+}
+
+.sidebar-map h1{
+	padding-top: 1.2em;
+	color: #ff5a52;
 }
 
 .sidebar-map h3{
@@ -29,13 +61,19 @@ padding-top: 30px;
 	font-weight: 400;
 	font-size: 1em;
 	line-height: 150%;
-	padding-bottom: 30px;
 }
 
-.main-map{
-	padding-top: 30px;
-	border-right: 1px solid #ccc;
+.sidebar-map h3::before { 
+    content: "\f106";
+    font-family: "FontAwesome";
+ 	font-weight: normal;
+  	font-style: normal;
+  	display: inline-block;
+  	text-decoration: inherit;
+  	margin-right: 3px;
+  	color: #ff5a52;
 }
+
 
 .title{
 	font-family: 'Crimson Text', serif;
