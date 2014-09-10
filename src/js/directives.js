@@ -38,7 +38,9 @@ angular.module('tipot.directives', [])
                 return 'href="'+ $rootScope.path +'?doc='+ fileId +'&bookmark=' + bookmark + '"';
               });
 
-              element.html(mar.makeHtml(' ' + body.trim()));
+              var content = mar.makeHtml(' ' + body.trim());
+              console.log(content);
+              element.html(content.replace(/^\s*<p></, '<'));
 
               // does this body contain the bookmark given as link?
               if(body.indexOf('name="'+$rootScope.bookmark+'"') != -1){

@@ -40,7 +40,7 @@ angular.module('tipot', [
   $routeProvider.when('/drive-in/:folderId/:id', {templateUrl: settings.partials + '/drive-in/index.html', controller: 'drivePageCtrl'});
   
 
-  $routeProvider.when('/:id', {templateUrl: settings.partials + '/page.html', controller: 'pageCtrl'});
+  $routeProvider.when('/:id', {templateUrl: settings.partials + '/page.html', controller: 'pageCtrl', reloadOnSearch:false});
   
   $routeProvider.otherwise({redirectTo: '/'});
 

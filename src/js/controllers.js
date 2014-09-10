@@ -310,7 +310,7 @@ angular.module('tipot.controllers', [])
 
     $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
       $log.debug('layoutCtrl @$routeChangeSuccess', $location, $routeParams.bookmark? 'bookmark=' + $routeParams.bookmark:'');
-      $rootScope.path = '/#' + $location.path();
+      $rootScope.path = $location.absUrl();
       $rootScope.bookmark = $routeParams.bookmark;
     });
 
