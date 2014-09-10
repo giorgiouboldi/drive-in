@@ -13,17 +13,38 @@ p {
 
 
 /*Map Template*/
-
-img{
-width: 100%;
+.full-width-image{
+	max-height:80%;
+	width: 100%;
 }
 
-.sidebar-map{
 
+.sidebar-map{
+padding-top: 30px;
+}
+
+.sidebar-map p{
+padding-bottom: 30px;
+}
+
+.sidebar-map h3{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 150%;
+	padding-bottom: 50px;
 }
 
 .main-map{
+	padding-top: 30px;
 	border-right: 1px solid #ccc;
+}
+
+.title{
+	font-family: 'Crimson Text', serif;
+	font-size: 2.5em;
+	line-height: 100%;
+	padding-bottom: 30px;
 }
 
 h1{
@@ -32,9 +53,16 @@ h1{
 	text-transform: uppercase;
 	font-size: 1em;
 	letter-spacing: 1px;
+}
 
+.main-map h1{
+	padding-top: 30px;
 }
 
 h2 {
-	display: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	letter-spacing: 1px;
 }
