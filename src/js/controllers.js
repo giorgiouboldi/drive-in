@@ -138,7 +138,7 @@ angular.module('tipot.controllers', [])
                         return d.img.src.split(/=s\d+$/).shift();
                       });
             // type assignation based on file naming 
-            console.log('structure ',title.text)
+            console.log('structure ',title.text, title.raw)
             if(title.text) {
               if(title.text.match(/\.html$/))
                 type = "html";
@@ -146,7 +146,7 @@ angular.module('tipot.controllers', [])
                 type = "css";
               else if(title.text.match(/\.js$/))
                 type = "js";
-              else if(title.text.indexOf("description") != -1)
+              else if(title.text.indexOf("description") != -1 || title.raw.indexOf("narrative") != -1)
                 type = "Document"
                else if(title.text.indexOf("placeholder") != -1)
                 type = "PNG Image"
