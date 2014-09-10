@@ -19,6 +19,7 @@ p {
 .full-width-image{
 	 position: relative;
 	 border-bottom: 1px solid #f0ecec;
+	 padding-top: 50px;
 }
 
 .full-width-image img{

@@ -38,7 +38,7 @@ angular.module('tipot.directives', [])
                 return 'href="'+ $rootScope.path +'?doc='+ fileId +'&bookmark=' + bookmark + '"';
               });
 
-              var content = mar.makeHtml(' ' + body.trim());
+              var content = body;//mar.makeHtml(' ' + body.trim());
               console.log(content);
               element.html(content.replace(/^\s*<p></, '<'));
 
