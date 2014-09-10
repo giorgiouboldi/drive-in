@@ -40,12 +40,13 @@
           </div>
 
           <div ng-switch-when="Document">
-            <h2 class="filename">{{file.title}}</h2>
+            <!--<h2 class="filename">{{file.title}}</h2>-->
             <div lazy-file file="file"></div>
           </div>
 
           <div ng-switch-when="Finding">
-            <h2 class="filename">{{file.title}} finding</h2>
+            <hr>
+            <h2 class="filename">{{file.title}}</h2>
             <div lazy-file file="file"></div>
           </div>
 
@@ -63,7 +64,7 @@
       <div ng-repeat="file in files">
         <div ng-switch="file.type">
           <div ng-switch-when="Metadata">
-            <h2 class="filename">{{file.title}} metadata</h2>
+             <!--<h2 class="filename">{{file.title}} metadata</h2>-->
             <div lazy-file file="file"></div>
           </div>
         </div>
