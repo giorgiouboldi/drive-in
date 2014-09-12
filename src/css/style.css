@@ -9,12 +9,6 @@
 	margin-left: 100px;
 }
 
-p {
-	font-family: 'Crimson Text', serif;
-	font-size: 1.2em;
-
-}
-
 /*Map Template*/
 .full-width-image{
 	 position: relative;
@@ -36,7 +30,11 @@ p {
 .content-main-map{
 	border-right: 1px solid #f0ecec;
 	padding-right: 70px;
-	padding-top: 30px;
+	padding-top: 100px;
+}
+
+.content-main-map img{
+	width: 100%;
 }
 
 .sidebar-map{
@@ -48,57 +46,64 @@ p {
 	padding-top: 30px;
 }
 
-.sidebar-map p{
-	margin: 0;
-}
-
-.sidebar-map h1{
-	padding-top: 1.2em;
-	color: #ff5a52;
-}
-
-.sidebar-map h3{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-	line-height: 150%;
-}
-
-.sidebar-map h3::before { 
-    content: "\f106";
-    font-family: "FontAwesome";
- 	font-weight: normal;
-  	font-style: normal;
-  	display: inline-block;
-  	text-decoration: inherit;
-  	margin-right: 3px;
-  	color: #ff5a52;
-}
-
-
 .title{
 	font-family: 'Crimson Text', serif;
-	font-size: 2.5em;
+	font-size: 5em;
 	line-height: 100%;
-	padding-bottom: 30px;
+}
+
+.subtitle{
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	font-size: 2em;
+	color: #ccc;
+	line-height: 100%;
+	padding-bottom: 70px;
 }
 
 h1{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
-	text-transform: uppercase;
 	font-size: 1em;
 	letter-spacing: 1px;
-}
-
-.main-map h1{
-	padding-top: 30px;
+	text-transform: uppercase;
+	padding-top: 50px;
+	color:#ff5a52;
 }
 
 h2 {
+	font-family: 'Crimson Text', serif;
+	font-size: 2em;	
+	line-height: 130%;
+	padding-bottom: 20px;
+}
+
+h3 {
+	font-family: 'Crimson Text', serif;
+	font-size: 2em;	
+	line-height: 130%;
+	padding-top: 60px;
+}
+
+h4 {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1em;
 	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+h5 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	padding-bottom: 30px;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+	font-size: 1.4em;
+}
+
+ul {
+	font-family: 'Crimson Text', serif;
+	font-size: 1.4em;
 }
