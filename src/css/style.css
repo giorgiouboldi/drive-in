@@ -27,6 +27,7 @@ p {
     width: auto;
     max-height: 80%; /* corresponds to max height of 450px */
     margin: 0 auto;
+    min-height: 100px;
 }
 
 .main-map{
@@ -36,7 +37,11 @@ p {
 .content-main-map{
 	border-right: 1px solid #f0ecec;
 	padding-right: 70px;
-	padding-top: 30px;
+	padding-top: 100px;
+}
+
+.content-main-map img{
+	max-width: 100%;
 }
 
 .sidebar-map{
